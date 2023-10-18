@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/myFlix-Angular-client/",
             "outputPath": "dist/my-flix-angular-client",
             "index": "src/index.html",
             "main": "src/main.ts",
