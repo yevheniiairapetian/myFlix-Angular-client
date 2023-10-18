@@ -40,7 +40,9 @@ export class UserLoginFormComponent implements OnInit {
       // this.router.navigate(['movies']);
       this.snackBar.open('Successfully logged in', 'OK', {
         duration: 2000
+
       });
+      this.router.navigate(['movies']);
     }, (result) => {
       this.snackBar.open('Please check your credentials', 'OK', {
         duration: 2000

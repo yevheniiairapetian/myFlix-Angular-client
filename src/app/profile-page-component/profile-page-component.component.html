@@ -1,0 +1,42 @@
+<div>
+  <app-navbar></app-navbar>
+  <div class="profile content">
+    <h1 class="my-profile">My Profile</h1>
+    <div class="grid">
+      <div class="user-container">
+        <p>Username: {{ user.Username }}</p>
+        <p>Email: {{ user.Email }}</p>
+        <p>Birthday: {{ user.Birthday | date }}</p>
+      </div>
+      <mat-card>
+        <mat-card-content>
+          <form class="profile-form">
+            <mat-form-field>
+              <input matInput [(ngModel)]="userData.Username" placeholder="Username" type="text" name="Username"
+                required>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput [(ngModel)]="userData.Password" type="password" placeholder="Password" name="Password"
+                required>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput [(ngModel)]="userData.Email" type="email" placeholder="Email" name="Email" required>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput [(ngModel)]="userData.Birthday" type="date" placeholder="Birthday" name="Birthday" required>
+            </mat-form-field>
+            <mat-card-actions>
+              <button mat-raised-button (click)="updateUser()" color="primary">
+                Update User
+              </button>
+              <button mat-raised-button (click)="deleteUser()" color="">
+                Delete User
+              </button>
+
+            </mat-card-actions>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

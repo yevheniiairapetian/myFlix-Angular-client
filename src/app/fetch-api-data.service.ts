@@ -115,13 +115,17 @@ export class UserRegistrationService {
   }
 
   // api call to add a movie to user's favorite list
-  addFavoriteMovie(movieId: string, username: string): Observable<any> {
+  addFavoriteMovie(movieId: string): Observable<any> {
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
     const token = localStorage.getItem('token');
-
-    return this.http.post(apiUrl + `users/${username}/${movieId}`, {}, {
-      headers: new HttpHeaders({
-        Authorization: 'Bearer ' + token,
-      })
+    user.FavoriteMovies.push(movieId);
+    localStorage.setItem('user', JSON.stringify(user));
+    return this.http.post(apiUrl + 'users/' + user.Username + '/movies/' + movieId, {}, {
+      headers: new HttpHeaders(
+        {
+          Authorization: 'Bearer ' + token,
+        }),
+      responseType: "text"
     }).pipe(
       map(this.extractResponseData),
       catchError(this.handleError)
@@ -129,30 +133,31 @@ export class UserRegistrationService {
   }
 
   // api call to delete a movie from the user's favorite list
-  deleteFavoriteMovie(movieId: string, username: string): Observable<any> {
+  deleteFavoriteMovie(movieId: string): Observable<any> {
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
     const token = localStorage.getItem('token');
 
-    return this.http.delete(apiUrl + 'users/' + username + '/movies/' + movieId, {
-      headers: new HttpHeaders({
-        Authorization: 'Bearer ' + token,
-      })
+    const index = user.FavoriteMovies.indexOf(movieId);
+    console.log(index);
+    if (index > -1) { // only splice array when item is found
+      user.FavoriteMovies.splice(index, 1); // 2nd parameter means remove one item only
+    }
+    localStorage.setItem('user', JSON.stringify(user));
+    return this.http.delete(apiUrl + 'users/' + user.Username + '/movies/' + movieId, {
+      headers: new HttpHeaders(
+        {
+          Authorization: 'Bearer ' + token,
+        }),
+      responseType: "text"
     }).pipe(
       map(this.extractResponseData),
       catchError(this.handleError)
     );
   }
 
-  isFavoriteMovie(movieId: string, username: string): Observable<any> {
-    const token = localStorage.getItem('token');
-
-    return this.http.delete(apiUrl + `users/${username}/${movieId}`, {
-      headers: new HttpHeaders({
-        Authorization: 'Bearer ' + token,
-      })
-    }).pipe(
-      map(this.extractResponseData),
-      catchError(this.handleError)
-    );
+  isFavoriteMovie(movieId: string): boolean {
+    const user = JSON.parse(localStorage.getItem('user') || '{}');
+    return user.FavoriteMovies.indexOf(movieId) >= 0;
   }
 
   // api call to edit a user

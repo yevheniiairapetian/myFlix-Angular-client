@@ -1,0 +1,29 @@
+.profile {
+  padding: 26px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.profile-form {
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.content {
+  margin-top: 64px; /* Ajusta el valor según la altura de tu navbar */
+}
+
+.my-profile{
+  color: #552190;
+}
+
+@media screen and (max-width: 600px){
+  .grid{
+    display: flex;
+    flex-direction:column;
+  }
+}

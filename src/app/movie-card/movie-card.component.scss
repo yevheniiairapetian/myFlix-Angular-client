@@ -1,0 +1,24 @@
+.movie-page {
+  display: grid;
+  align-items: stretch;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 1fr;
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.movie-header {
+  min-height: 80px;
+  color: darkblue;
+}
+
+.fav-button {
+  margin-left: auto;
+  color: #d87093;
+}
+
+.content {
+  margin-top: 64px; /* Ajusta el valor según la altura de tu navbar */
+}

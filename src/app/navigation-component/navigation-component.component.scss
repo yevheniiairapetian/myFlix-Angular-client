@@ -1,0 +1,18 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+  /* Puedes agregar otros estilos según tus preferencias */
+}
+
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.title{
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
