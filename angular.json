@@ -14,6 +14,14 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://yevheniiairapetian.github.io/myFlix-Angular-client/",
+            "name": "Movie App",
+            "email": "sonkozhenia11@gmail.com"
+          }
+        },
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
