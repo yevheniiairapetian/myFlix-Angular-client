@@ -13,21 +13,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Views & Features:
 ### Welcome view
-Allows users to log in with a username and password
-Uses user-friendly modals to show information
-Allows new users to register (username, password, email, date of birth)
-Uses user-friendly modals to show information
+- Allows users to log in with a username and password
+_ Uses user-friendly modals to show information
+_ Allows new users to register (username, password, email, date of birth)
 ### Main view
-Returns ALL movies
-Ability to click on buttons to see more information about the movie's director, description, release year, rating
-Ability to log out
-Ability to navigate to Profile view
-Ability to add a movie to favorites/delete a movie from favorites
+- Returns ALL movies
+- Ability to click on buttons to see more information about the movie's director, description, release year, rating
+- Ability to log out
+- Ability to navigate to Profile view
+- Ability to add a movie to favorites/delete a movie from favorites
 
 ### Profile view
-Displays user registration details
-Allows users to update their info (username, password, email, date of birth)
-Allows existing users to deregister
+- Displays user registration details
+- Allows users to update their info (username, password, email, date of birth)
+- Allows existing users to deregister
 
 ## Project Dependencies
 - Angular v16 as a frontend library
@@ -48,7 +47,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Clone and Preview
-To clone the app use the following command: `console git clone git@github.com:yevheniiairapetian/myFlix-Angular-client.git` Or download directly by clicking on <> Code button > Download ZIP. Navigate to the ```myFlix-Angular-client``` folder with the ```cd myFlix-Angular-client``` in the terminal, install the required dependencies using the `npm install command`.
+To clone the app use the following command: `console git clone git@github.com:yevheniiairapetian/myFlixAngular-client.git` Or download directly by clicking on <> Code button > Download ZIP. 
+- Navigate to the ```myFlix-Angular-client``` folder with the ```cd myFlix-Angular-client``` in the terminal. This project required the latest nvm and node versions. 
+- Use the ```npm install -g @angular/cli``` command to istall Angular. 
+- Use the ```nvm install latest``` command to install the latest version of nvm. 
+- Install the required dependencies using the `npm install command`.
 
 ## Build
 
