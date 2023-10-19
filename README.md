@@ -48,7 +48,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Clone and Preview
 To clone the app use the following command: `console git clone git@github.com:yevheniiairapetian/myFlixAngular-client.git` Or download directly by clicking on <> Code button > Download ZIP. 
-- Navigate to the ```myFlix-Angular-client``` folder with the ```cd myFlix-Angular-client``` in the terminal. This project requires the latest nvm and node versions. 
+- Navigate to the ```myFlix-Angular-client``` folder with the ```cd myFlix-Angular-client``` in the terminal. This project requires the latest nvm and node versions.
+- Download the node .exe file from the official website and run it (you may need to first delete the old version and then install the new one).
 - Use the ```npm install -g @angular/cli``` command to istall Angular globally. 
 - Use the ```nvm install latest``` command to install the latest version of nvm. 
 - Install the required dependencies using the `npm install command`.
