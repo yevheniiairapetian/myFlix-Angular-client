@@ -2,7 +2,7 @@
   display: grid;
   align-items: stretch;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-auto-rows: 1fr;
   max-width: 1280px;
   margin: auto;
@@ -11,7 +11,16 @@
 
 .movie-header {
   min-height: 80px;
+  width:100%;
   color: darkblue;
+}
+
+.mat-card{
+  width:100%;
+}
+
+.mdc-card__actions{
+  display:block;
 }
 
 .fav-button {
@@ -20,5 +29,5 @@
 }
 
 .content {
-  margin-top: 64px; /* Ajusta el valor según la altura de tu navbar */
+  margin-top: 64px;
 }
