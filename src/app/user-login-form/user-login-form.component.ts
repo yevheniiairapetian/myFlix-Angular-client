@@ -29,10 +29,15 @@ export class UserLoginFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/** Logs the user in.
+ * Relies on the loginUser function from the fetch-api-data.service.ts file
+ *
+ */
   loginUser(): void {
     this.fetchApiData.userLogin(this.loginData).subscribe((result) => {
-
+/** Sets the user's data to local storage.
+ *
+ */
       localStorage.setItem('user', JSON.stringify(result.user));
       localStorage.setItem('token', result.token);
 

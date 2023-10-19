@@ -29,7 +29,9 @@ export class ProfilePageComponent implements OnInit {
       return;
     }
 
-
+/**
+   * Set user's username, birthday, email, password.
+   */
     this.user = user;
     this.userData = {
       Username: user.Username || "",

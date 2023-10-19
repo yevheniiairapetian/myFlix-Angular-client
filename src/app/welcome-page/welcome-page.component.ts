@@ -45,9 +45,5 @@ export class WelcomePageComponent implements OnInit {
    * Opens a modal dialog to display movie cards.
    */
 
-  openMoviesDialog(): void {
-    this.dialog.open(MovieCardComponent, {
-      width: '500px'
-    });
-  }
+
 }

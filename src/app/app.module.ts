@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
@@ -22,14 +21,18 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { MovieDetailDialogComponent } from './movie-detail-dialog/movie-detail-dialog.component';
 import { ProfilePageComponent } from './profile-page-component/profile-page-component.component';
 import { NavigationComponent } from './navigation-component/navigation-component.component';
-
+/** Here app's routes are defined
+ *
+ */
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
   { path: 'profile', component: ProfilePageComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
-
+/**
+ * Here required components are defined
+ */
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +44,9 @@ const appRoutes: Routes = [
     ProfilePageComponent,
     NavigationComponent
   ],
-
+/**
+ * Here import statements are defined
+ */
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,

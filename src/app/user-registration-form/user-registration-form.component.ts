@@ -27,12 +27,13 @@ constructor(
 
 ngOnInit(): void {
 }
-
-// This is the function responsible for sending the form inputs to the backend
+/**
+* Is responsible for sending the form inputs to the backend. Relies on the registerUser function from the fetch-api-data.service.ts file
+*/
 registerUser(): void {
     this.fetchApiData.userRegistration(this.userData).subscribe((result) => {
-  // Logic for a successful user registration goes here! (To be implemented)
-     this.dialogRef.close(); // This will close the modal on success!
+
+     this.dialogRef.close(); // Closes the modal on success
      console.log(result);
      this.snackBar.open('User registered successfully', 'OK', {
         duration: 2000

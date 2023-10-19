@@ -83,6 +83,11 @@ getMovies(): void {
     })
   }
 
+  /**
+   * opens a dialog displaying IMDb Rating details
+   * @param IMDbRating
+   */
+
   openRatingDialog(IMDbRating: any): void {
     this.dialog.open(MovieDetailDialogComponent, {
       data: {
@@ -91,6 +96,11 @@ getMovies(): void {
       }
     })
   }
+
+  /**
+   * opens a dialog displaying Release Year details
+   * @param ReleaseDate
+   */
 
   openYearDialog(ReleaseDate: any): void {
     this.dialog.open(MovieDetailDialogComponent, {
@@ -103,7 +113,7 @@ getMovies(): void {
 
   /**
    * Add movie to users Favorites
-   * displays a notification with succesfully added
+   * displays a notification if the movie is succesfully added
    * @param id
    */
 
@@ -118,7 +128,7 @@ getMovies(): void {
   /**
    * Checks if a movie is in the user's favorites.
    * @param id
-   * @returns True or False depends if the movie is in
+   * @returns True or False depending if the movie is in
    */
 
   isFavorite(id: string): any {
