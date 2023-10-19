@@ -1,6 +1,43 @@
 # MyFlixAngularClient
 
+## Description
+This project contains the front-end part of the R3play back-end ([here](https://github.com/yevheniiairapetian/r3play)) for displaying the information about movies written with Angular.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+
+## Technologies Used
+- Javascript/Angular
+- Material Design
+- Typescript
+- HTML
+- CSS
+
+## Views & Features:
+### Welcome view
+Allows users to log in with a username and password
+Uses user-friendly modals to show information
+Allows new users to register (username, password, email, date of birth)
+Uses user-friendly modals to show information
+### Main view
+Returns ALL movies
+Ability to click on buttons to see more information about the movie's director, description, release year, rating
+Ability to log out
+Ability to navigate to Profile view
+Ability to add a movie to favorites/delete a movie from favorites
+
+### Profile view
+Displays user registration details
+Allows users to update their info (username, password, email, date of birth)
+Allows existing users to deregister
+
+## Project Dependencies
+- Angular v16 as a frontend library
+- Material Design for design
+- Typescript for static data typing
+- TypeDoc for Documentation
+- _please see other project dependencies in the package.json file_
+
+## Live Version
+The App is live [here](https://r3play.netlify.app/](https://yevheniiairapetian.github.io/myFlix-Angular-client/)
 
 ## Development server
 
@@ -9,6 +46,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Clone and Preview
+To clone the app use the following command: `console git clone git@github.com:yevheniiairapetian/myFlix-Angular-client.git` Or download directly by clicking on <> Code button > Download ZIP. Navigate to the ```myFlix-Angular-client``` folder with the ```cd myFlix-Angular-client``` in the terminal, install the required dependencies using the `npm install command`.
 
 ## Build
 
@@ -25,3 +65,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Contact:
+Feel free to contact me via[ LinkedIn](https://www.linkedin.com/in/yevhenii-airapetian/) or  
+[email](mailto:sonkozhenia11@gmail.com) or 
+via the contact information on the [website](https://yevheniiairapetian.github.io/portfolio-website/contact.html) 
