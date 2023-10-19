@@ -37,7 +37,7 @@ Allows existing users to deregister
 - _please see other project dependencies in the package.json file_
 
 ## Live Version
-The App is live [here](https://r3play.netlify.app/](https://yevheniiairapetian.github.io/myFlix-Angular-client/)
+The App is live [here](https://yevheniiairapetian.github.io/myFlix-Angular-client/)
 
 ## Development server
 
