@@ -14,8 +14,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Views & Features:
 ### Welcome view
 - Allows users to log in with a username and password
-_ Uses user-friendly modals to show information
-_ Allows new users to register (username, password, email, date of birth)
+- Uses user-friendly modals to show information
+- Allows new users to register (username, password, email, date of birth)
 ### Main view
 - Returns ALL movies
 - Ability to click on buttons to see more information about the movie's director, description, release year, rating
