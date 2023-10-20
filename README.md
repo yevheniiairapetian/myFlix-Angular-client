@@ -49,7 +49,7 @@ To clone the app use the following command: `console git clone git@github.com:ye
 - Use the ```npm install -g @angular/cli``` command to istall Angular globally. 
 - Use the ```nvm install latest``` command to install the latest version of nvm. 
 - Install the required dependencies using the `npm install command`.
-- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Run `ng serve` or `ng serve --open` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Build
 
