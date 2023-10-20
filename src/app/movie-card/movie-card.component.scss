@@ -19,9 +19,9 @@
   width:100%;
 }
 
-img{
-  object-fit:cover;
-}
+
+
+
 
 .mdc-card__actions{
   display:block;
@@ -34,4 +34,24 @@ img{
 
 .content {
   margin-top: 64px;
+}
+
+@media screen and (max-width: 660px){
+  .movie-page {
+    display: block;
+  }
+  *{
+    word-wrap: break-word;
+  }
+
+  .content {
+    margin-top: 64px;
+
+  }
+  .mat-mdc-card-subtitle~.mat-mdc-card-title, .mat-mdc-card-title~.mat-mdc-card-subtitle, .mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-title, .mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-subtitle, .mat-mdc-card-title-group .mat-mdc-card-title, .mat-mdc-card-title-group .mat-mdc-card-subtitle{
+    font-size: 14px;
+  }
+  .mat-mdc-card.mdc-card img{
+    object-fit: cover;
+  }
 }
