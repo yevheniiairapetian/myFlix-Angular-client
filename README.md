@@ -29,7 +29,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Allows existing users to deregister
 
 ## Project Dependencies
-- Angular v16 as a frontend library
+- Angular v16 as a frontend framework
 - Material Design for design
 - Typescript for static data typing
 - TypeDoc for Documentation
