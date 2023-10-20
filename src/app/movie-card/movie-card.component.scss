@@ -15,12 +15,11 @@
   color: darkblue;
 }
 
-.mat-card{
-  width:100%;
+
+
+.movie-img{
+  object-fit: cover;
 }
-
-
-
 
 
 .mdc-card__actions{
@@ -51,7 +50,12 @@
   .mat-mdc-card-subtitle~.mat-mdc-card-title, .mat-mdc-card-title~.mat-mdc-card-subtitle, .mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-title, .mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-subtitle, .mat-mdc-card-title-group .mat-mdc-card-title, .mat-mdc-card-title-group .mat-mdc-card-subtitle{
     font-size: 14px;
   }
-  .mat-mdc-card.mdc-card img{
+
+  .mat-mdc-card-header{
+    padding:0;
+  }
+  .movie-img{
+    width:100%;
     object-fit: cover;
   }
 }
