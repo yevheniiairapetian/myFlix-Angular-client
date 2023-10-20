@@ -11,6 +11,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - HTML
 - CSS
 
+## Project Dependencies
+- Angular v16 as a frontend framework
+- Material Design for design
+- Typescript for static data typing
+- TypeDoc for Documentation
+- Github pages for deployment
+- _please see other project dependencies in the package.json file_
+
 ## Views & Features:
 ### Welcome view
 - Allows users to log in with a username and password
@@ -27,13 +35,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Displays user registration details
 - Allows users to update their info (username, password, email, date of birth)
 - Allows existing users to deregister
-
-## Project Dependencies
-- Angular v16 as a frontend framework
-- Material Design for design
-- Typescript for static data typing
-- TypeDoc for Documentation
-- _please see other project dependencies in the package.json file_
 
 ## Live Version
 The App is live [here](https://yevheniiairapetian.github.io/myFlix-Angular-client/)
