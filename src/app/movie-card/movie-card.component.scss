@@ -81,6 +81,7 @@
 
   .mat-mdc-card[_ngcontent-ng-c3469755192], .mdc-card[_ngcontent-ng-c3469755192] {
     width: 90%;
+    overflow: hidden;
 }
 
   * {
@@ -104,6 +105,7 @@
   }
   .movie-img {
     object-fit: cover;
+    overflow: hidden;
   }
 
 }
