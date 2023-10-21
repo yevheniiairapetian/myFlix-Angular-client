@@ -87,7 +87,11 @@
   * {
     word-wrap: break-word;
   }
-
+  .movie-page,
+  .content{
+    width: 95%;
+    margin: 0 auto;
+  }
   .content {
     margin-top: 64px;
 
