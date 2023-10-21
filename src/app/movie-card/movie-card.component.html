@@ -21,8 +21,8 @@
       <button  class="actions" mat-button color="primary" (click)="openYearDialog(movie.ReleaseDate.slice(0, 4))">
         Release
       </button>
-      <button  class="actions" mat-button color="primary" (click)="openSynopsisDialog(movie.Genre.Description)">
-        More
+      <button  class="actions" mat-button color="primary" (click)="openActorsDialog(movie.Actors.join(', '))">
+        Actors
       </button>
       <button class="primary" *ngIf="!isFavorite(movie._id)" mat-icon-button (click)="addFavorite(movie._id)" matTooltip="Add to favorites">
         <mat-icon>favorite_border</mat-icon>

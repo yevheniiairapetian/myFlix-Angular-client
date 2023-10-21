@@ -56,15 +56,15 @@ getMovies(): void {
   }
 
   /**
-   * Opens a dialog dsplaying movie description
-   * @param synopsis
+   * Opens a dialog dsplaying movie actors
+   * @param actors
    */
 
-  openSynopsisDialog(synopsis: string): void {
+  openActorsDialog(actors: any): void {
     this.dialog.open(MovieDetailDialogComponent, {
       data: {
-        title: "Description",
-        content: synopsis,
+        title: "Actors",
+        content: actors,
       }
     })
   }
