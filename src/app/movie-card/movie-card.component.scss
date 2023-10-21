@@ -67,6 +67,9 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
+  .movie-img {
+    object-fit: cover;
+  }
 
 }
 
@@ -98,6 +101,9 @@
     font-size: 14px;
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+  .movie-img {
+    object-fit: cover;
   }
 
 }
