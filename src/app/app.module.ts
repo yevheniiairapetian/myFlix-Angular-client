@@ -37,6 +37,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    FlexLayoutModule,
     UserRegistrationFormComponent,
     UserLoginFormComponent,
     MovieCardComponent,
@@ -50,6 +51,7 @@ const appRoutes: Routes = [
  */
   imports: [
     RouterModule.forRoot(appRoutes),
+    FlexLayoutModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
