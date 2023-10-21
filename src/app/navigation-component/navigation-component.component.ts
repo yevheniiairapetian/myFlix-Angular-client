@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './navigation-component.component.html',
   styleUrls: ['./navigation-component.component.scss']
 })
+
 export class NavigationComponent {
   constructor(
     public fetchApiData: UserRegistrationService,

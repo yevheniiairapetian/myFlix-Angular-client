@@ -1,13 +1,13 @@
 <!-- src/app/movie-card/movie-card.component.html -->
 <div>
   <app-navbar></app-navbar>
-  <div class="movie-page content">
-  <mat-card *ngFor="let movie of movies;">
+  <div class="movie-page content" fxLayout.xs="column">
+  <mat-card fxFlex.xs="90%" *ngFor="let movie of movies;">
     <mat-card-header class="movie-header">
       <mat-card-title>{{movie.Title}}</mat-card-title>
       <mat-card-subtitle>Directed by: {{movie.Director.Name}}</mat-card-subtitle>
     </mat-card-header>
-    <img src={{movie.ImagePath}} alt={{movie.Title}} />
+    <img mat-card-image style="object-fit: cover;" class="movie-img" src={{movie.ImagePath}} alt={{movie.Title}} />
     <mat-card-actions>
       <button  class="actions" mat-button color="primary" (click)="openGenreDialog(movie.Genre)">
         Genre
@@ -21,8 +21,8 @@
       <button  class="actions" mat-button color="primary" (click)="openYearDialog(movie.ReleaseDate.slice(0, 4))">
         Release
       </button>
-      <button  class="actions" mat-button color="primary" (click)="openSynopsisDialog(movie.Genre.Description)">
-        More
+      <button  class="actions" mat-button color="primary" (click)="openActorsDialog(movie.Actors.join(', '))">
+        Actors
       </button>
       <button class="primary" *ngIf="!isFavorite(movie._id)" mat-icon-button (click)="addFavorite(movie._id)" matTooltip="Add to favorites">
         <mat-icon>favorite_border</mat-icon>
