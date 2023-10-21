@@ -2,7 +2,7 @@
 <div>
   <app-navbar></app-navbar>
   <div class="movie-page content">
-  <mat-card *ngFor="let movie of movies;">
+  <mat-card md-cols-xs="1" md-cols-sm="1" *ngFor="let movie of movies;">
     <mat-card-header class="movie-header">
       <mat-card-title>{{movie.Title}}</mat-card-title>
       <mat-card-subtitle>Directed by: {{movie.Director.Name}}</mat-card-subtitle>
