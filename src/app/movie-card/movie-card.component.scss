@@ -44,7 +44,8 @@
 
   .mat-mdc-card,
   .mdc-card {
-    width: 46%;
+    width: 90%;
+    margin: 20px auto 10px auto;
 
   }
 
@@ -54,6 +55,7 @@
 
   .content {
     margin-top: 64px;
+
 
   }
 
@@ -78,7 +80,7 @@
 @media screen and (max-width: 660px) {
 
   .mat-mdc-card[_ngcontent-ng-c3469755192], .mdc-card[_ngcontent-ng-c3469755192] {
-    width: 100%;
+    width: 90%;
 }
 
   * {
