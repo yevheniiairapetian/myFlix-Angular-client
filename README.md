@@ -22,13 +22,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Views & Features:
 ### Welcome view
 - Allows users to log in with a username and password
-- Uses user-friendly modals to show information
+- Uses user-friendly modal windows to show information
 - Allows new users to register (username, password, email, date of birth)
 ### Main view
 - Returns ALL movies
-- Ability to click on buttons to see more information about the movie's director, description, release year, rating
+- Ability to click on buttons to see more information about the movie's director, description, release year, rating, actors
 - Ability to log out
-- Ability to navigate to Profile view
+- Ability to navigate to the Profile view
 - Ability to add a movie to favorites/delete a movie from favorites
 
 ### Profile view
