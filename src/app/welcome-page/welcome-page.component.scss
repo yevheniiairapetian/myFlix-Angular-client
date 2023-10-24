@@ -1,3 +1,29 @@
 .main-page{
   text-align: center;
 }
+
+button.welcome-buttons-color{
+  background-color: #7898E4;
+  color: white;
+}
+
+h1.welcome-heading{
+  margin-top:0;
+  background-color:#7898E4;
+  padding: 10px 0;
+  color: white;
+  animation: heading 2.5s ease-in-out;
+}
+
+@keyframes heading{
+  0%{
+    translate: 0px -14px;
+  }
+  50%{
+    translate: 0px 5px;
+  }
+
+  100%{
+    ptranslate: 0px -14px;
+  }
+}

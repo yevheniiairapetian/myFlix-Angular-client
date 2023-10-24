@@ -4,24 +4,24 @@
   <div class="movie-page content" fxLayout.xs="column">
   <mat-card fxFlex.xs="90%" *ngFor="let movie of movies;">
     <mat-card-header class="movie-header">
-      <mat-card-title>{{movie.Title}}</mat-card-title>
-      <mat-card-subtitle>Directed by: {{movie.Director.Name}}</mat-card-subtitle>
+      <mat-card-title class="card-title">{{movie.Title}}</mat-card-title>
+      <mat-card-subtitle class="card-subtitle">Director: {{movie.Director.Name}}</mat-card-subtitle>
     </mat-card-header>
     <img class="movie-img" src={{movie.ImagePath}} alt={{movie.Title}} />
     <mat-card-actions>
-      <button  class="actions" mat-button color="primary" (click)="openGenreDialog(movie.Genre)">
+      <button  mat-button class="card-buttons" (click)="openGenreDialog(movie.Genre)">
         Genre
       </button>
-      <button  class="actions" mat-button color="primary" (click)="openDirectorDialog(movie.Director)">
+      <button  mat-button class="card-buttons" (click)="openDirectorDialog(movie.Director)">
         Director
       </button>
-      <button  class="actions" mat-button color="primary" (click)="openRatingDialog(movie.IMDbRating)">
+      <button  mat-button class="card-buttons" (click)="openRatingDialog(movie.IMDbRating)">
         Rating
       </button>
-      <button  class="actions" mat-button color="primary" (click)="openYearDialog(movie.ReleaseDate.slice(0, 4))">
+      <button  mat-button class="card-buttons" (click)="openYearDialog(movie.ReleaseDate.slice(0, 4))">
         Release
       </button>
-      <button  class="actions" mat-button color="primary" (click)="openActorsDialog(movie.Actors.join(', '))">
+      <button  mat-button class="card-buttons" (click)="openActorsDialog(movie.Actors.join(', '))">
         Actors
       </button>
       <button class="primary" *ngIf="!isFavorite(movie._id)" mat-icon-button (click)="addFavorite(movie._id)" matTooltip="Add to favorites">

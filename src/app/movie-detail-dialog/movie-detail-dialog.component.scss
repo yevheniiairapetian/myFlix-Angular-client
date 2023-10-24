@@ -1,0 +1,12 @@
+button.close-button{
+  color: white;
+  background-color:#7898E4;
+  position: absolute;
+  right: 10px;
+}
+
+button.close-button:hover{
+  opacity: 0.9;
+  translate: 0px -4px;
+  transition: translate 0.3s ease-in-out;
+}
