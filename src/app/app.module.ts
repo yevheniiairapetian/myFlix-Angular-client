@@ -45,6 +45,7 @@ const appRoutes: Routes = [
     MovieDetailDialogComponent,
     ProfilePageComponent,
     NavigationComponent
+
   ],
 /**
  * Here import statements are defined

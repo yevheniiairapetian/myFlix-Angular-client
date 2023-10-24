@@ -4,9 +4,9 @@
     <h1 class="my-profile">My Profile</h1>
     <div class="grid">
       <div class="user-container">
-        <p>Username: {{ user.Username }}</p>
-        <p>Email: {{ user.Email }}</p>
-        <p>Birthday: {{ user.Birthday | date }}</p>
+        <p><span class="profile-data">Username:</span> {{ user.Username }}</p>
+        <p><span class="profile-data">Email:</span> {{ user.Email }}</p>
+        <p><span class="profile-data">Birthday:</span> {{ user.Birthday | date }}</p>
       </div>
       <mat-card>
         <mat-card-content>
@@ -26,10 +26,10 @@
               <input matInput [(ngModel)]="userData.Birthday" type="date" placeholder="Birthday" name="Birthday" required>
             </mat-form-field>
             <mat-card-actions>
-              <button mat-raised-button (click)="updateUser()" color="primary">
+              <button mat-raised-button (click)="updateUser()" class="update-button">
                 Update User
               </button>
-              <button mat-raised-button (click)="deleteUser()" color="">
+              <button mat-raised-button (click)="deleteUser()" class="delete-button">
                 Delete User
               </button>
 

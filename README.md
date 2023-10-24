@@ -22,19 +22,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Views & Features:
 ### Welcome view
 - Allows users to log in with a username and password
-- Uses user-friendly modals to show information
+- Uses user-friendly modal windows to show information
 - Allows new users to register (username, password, email, date of birth)
 ### Main view
 - Returns ALL movies
-- Ability to click on buttons to see more information about the movie's director, description, release year, rating
+- Ability to click on buttons to see more information about the movie's director, description, release year, rating, actors
 - Ability to log out
-- Ability to navigate to Profile view
+- Ability to navigate to the Profile view
 - Ability to add a movie to favorites/delete a movie from favorites
 
 ### Profile view
 - Displays user registration details
 - Allows users to update their info (username, password, email, date of birth)
 - Allows existing users to deregister
+
+## Project Screenshot
+<a href="https://ibb.co/Np8837p"><img src="https://i.ibb.co/vm77BDm/project7-1.png" alt="project7-1" border="0"></a>     
+## Project In Use Preview
+_Please click on the video below to watch it_  
+
+[![Watch the video](https://i.ibb.co/vm77BDm/project7-1.png)](https://streamable.com/gls8uk)
 
 ## Live Version
 The App is live [here](https://yevheniiairapetian.github.io/myFlix-Angular-client/)
@@ -70,5 +77,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Contact:
 Feel free to contact me via[ LinkedIn](https://www.linkedin.com/in/yevhenii-airapetian/) or  
-[email](mailto:sonkozhenia11@gmail.com) or 
+[email](mailto:contact@yevheniiairapetian.com) or 
 via the contact information on the [website](https://yevheniiairapetian.github.io/portfolio-website/contact.html) 

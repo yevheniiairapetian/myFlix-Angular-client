@@ -13,12 +13,27 @@
   }
 }
 
+button.update-button{
+  color: white;
+  background-color:#7898E4;
+}
+
+button.delete-button{
+  color: white;
+  background-color:#872242;
+  margin-left: 8px;
+}
+
 .content {
   margin-top: 64px; /* Ajusta el valor según la altura de tu navbar */
 }
 
 .my-profile{
-  color: #552190;
+  color:#7898E4;
+}
+
+.profile-data{
+  color:#7898E4;
 }
 
 @media screen and (max-width: 600px){

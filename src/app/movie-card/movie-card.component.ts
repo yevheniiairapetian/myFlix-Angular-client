@@ -120,7 +120,7 @@ getMovies(): void {
 
   addFavorite(id: string): void {
     this.fetchApiData.addFavoriteMovie(id).subscribe(() => {
-      this.snackBar.open('added to favorites', 'OK', {
+      this.snackBar.open('Added to favorites', 'Got it!', {
         duration: 2000
       })
     });
@@ -144,7 +144,7 @@ getMovies(): void {
 
   removeFavorite(id: string): void {
     this.fetchApiData.deleteFavoriteMovie(id).subscribe(() => {
-      this.snackBar.open('removed from favorites', 'OK', {
+      this.snackBar.open('Removed from favorites', 'Got it!', {
         duration: 2000
       })
     });
