@@ -37,11 +37,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Allows existing users to deregister
 
 ## Project Screenshot
-<a href="https://ibb.co/Np8837p"><img src="https://i.ibb.co/vm77BDm/project7-1.png" alt="project7-1" border="0"></a>     
+<a href="https://ibb.co/THVSztz"><img src="https://i.ibb.co/xMp0V6V/2023-10-25-01h30-21.png" alt="2023-10-25-01h30-21" border="0"></a>   
+<a href="https://ibb.co/R3rRRLt"><img src="https://i.ibb.co/tqjVVyn/2023-10-25-01h30-52.png" alt="2023-10-25-01h30-52" border="0"></a>
+
 ## Project In Use Preview
 _Please click on the video below to watch it_  
 
-[![Watch the video](https://i.ibb.co/vm77BDm/project7-1.png)](https://streamable.com/gls8uk)
+[![Watch the video](https://i.ibb.co/tqjVVyn/2023-10-25-01h30-52.png)](https://streamable.com/731ezr)
 
 ## Live Version
 The App is live [here](https://yevheniiairapetian.github.io/myFlix-Angular-client/)
